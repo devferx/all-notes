@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.addButton {
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  color: var(--black);
+  text-decoration: none;
+  font: var(--button-bold);
+  background: var(--orange-2);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.addButton .addIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("../../assets/add-icon.svg");
+}
+
+.emptyContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 56px;
+}
+
+.emptyContent h3 {
+  font: var(--headline2);
+}
+
+@media screen and (max-width: 425px) {
+  .emptyNotesImg {
+    width: 100%;
+  }
+}
