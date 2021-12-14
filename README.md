@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+<div align="center">
+<img width="120px"  src="https://raw.githubusercontent.com/no-te-rindas/logo/main/Logo/LeonidasEsteban-destello-envolvente-cuadrada.png" />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# All Notes
 
-## Available Scripts
+Crea la aplicación que te ayudará a escribir tus notas en formato MarkDown y ver como lucirá en tiempo real, además de poder compartirlas.
 
-In the project directory, you can run:
+## Requerimientos
+- Añadir animaciones
+- Exportar estilos con el siguiente plugin: https://www.figma.com/community/plugin/972939585144317012/Figma-to-CSS
+- Accesibilidad como prioridad
+- Almacenar notas e imagénes.
+- Sube tu código a GitHub
+- Publica tu resultado con github pages
+- Mándalo a revisión desde tu [perfil](https://leonidasesteban.com/estudiante)
 
-### `yarn start`
+## Desktop
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img width="400px"  src="https://github.com/no-te-rindas/imagenes/blob/main/Readmes/allnotes/allnotes.png?raw=true" />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Disclaimer
 
-### `yarn test`
+Todas son propuestas, el propósito de **/Proyectos** es brindarte el diseño, el límite de la creación lo dictan tus ganas de hacerlo realidad y tu skills del momento a la hora de codear.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Nivel 1
 
-### `yarn build`
+Estilo libre. Lleva el diseño al código utilizando tu framework favorito, o con HTML y CSS, no hay ninguna limitación.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Requerimientos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Accesibilidad como prioridad
+- Sube tu código a GitHub
+- Publica tu resultado con github pages
+- Mándalo a revisión desde tu [perfil](https://leonidasesteban.com/estudiante)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Nivel 2
 
-### `yarn eject`
+Guarda las notas y las imagénes, para poder consultarlas en cualquier otro momento.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Nivel 3
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Publicación, permite publicar las notas en un sitio estático para que cualquier persona pueda leerlas.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Requerimientos
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Accesibilidad como prioridad
+- Permitir publicación de las notas.
+- Sube tu código a GitHub
+- Publica tu resultado con github pages
+- Mándalo a revisión desde tu [perfil](https://leonidasesteban.com/estudiante)
 
-## Learn More
+## Créditos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Encuentra más proyectos asombrosos en [/Proyectos](https://leonidasesteban.com/proyectos)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Diseñado con ♥️ en leonidasesteban.com
