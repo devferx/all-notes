@@ -1,17 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
 
-import { Navigation } from "./routes/Navigation";
+import { App } from "./App";
+import reportWebVitals from "./reportWebVitals";
+
 import "./styles.css";
 import "prismjs/themes/prism-okaidia.css";
-import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Navigation />
-    </BrowserRouter>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
