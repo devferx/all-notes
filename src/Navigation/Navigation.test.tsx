@@ -18,4 +18,6 @@ describe("<Navigation />", () => {
 
     expect(screen.getByPlaceholderText("Tu contenido")).toBeInTheDocument();
   });
+
+  // TODO: Create new note save navigation test
 });

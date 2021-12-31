@@ -1,5 +1,5 @@
 :root {
-  ---white: #fffffe;
+  --white: #fffffe;
   --grey-10: #444444;
   --black: #1a1a1a;
   --grey-05: #999999;
@@ -35,48 +35,4 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 90vh;
-  gap: 24px;
-  margin-top: 32px;
-}
-
-.textarea {
-  padding: 16px 12px;
-  height: 100%;
-  resize: none;
-  background: #e2daeb;
-  font: var(--body1-regular-default);
-}
-
-.content {
-  gap: 16px;
-  max-width: 100%;
-  overflow-x: auto;
-  font: var(--body1-regular-default);
-  color: var(--black);
-}
-
-.content h1 {
-  font: var(--headline2);
-}
-
-.content h2 {
-  font: var(--headline3);
-}
-.content h3 {
-  font: var(--headline4);
-}
-
-.content a {
-  color: var(--black);
-  font: var(--body1-bold-underline);
-}
-
-.content img {
-  width: 100%;
 }

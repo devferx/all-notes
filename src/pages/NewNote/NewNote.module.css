@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.divider {
+  flex: 1;
+}
+
+.button {
+  border: none;
+  color: var(--white);
+  padding: 8px 24px;
+  background: var(--black);
+  border-radius: 4px;
+  cursor: pointer;
+  font: var(--button-bold);
+  border: 1px solid transparent;
+}
+
+.button.buttonTransparent {
+  background: transparent;
+  color: var(--black);
+  border-color: var(--black);
+}
+
+.select {
+  padding: 8px 24px;
+  color: var(--white);
+  background: var(--black);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.select option {
+  background: var(--white);
+  color: var(--black);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  gap: 24px;
+  margin-top: 16px;
+  padding-bottom: 40px;
+}
+
+.textarea {
+  padding: 16px 12px;
+  height: 100%;
+  resize: none;
+  background: #e2daeb;
+  font: var(--body1-regular-default);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 100%;
+  overflow-x: auto;
+  font: var(--body1-regular-default);
+  color: var(--black);
+}
+
+.content h1 {
+  font: var(--headline2);
+}
+
+.content h2 {
+  font: var(--headline3);
+}
+.content h3 {
+  font: var(--headline4);
+}
+
+.content a {
+  color: var(--black);
+  font: var(--body1-bold-underline);
+}
+
+.content img {
+  width: 100%;
+}
