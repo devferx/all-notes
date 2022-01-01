@@ -27,21 +27,3 @@
   background-size: cover;
   background: url("../../assets/add-icon.svg");
 }
-
-.emptyContent {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 80px;
-  margin-top: 56px;
-}
-
-.emptyContent h3 {
-  font: var(--headline2);
-}
-
-@media screen and (max-width: 425px) {
-  .emptyNotesImg {
-    width: 100%;
-  }
-}

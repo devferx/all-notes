@@ -6,8 +6,6 @@ import { NewNotePage } from "./";
 import { NotesProvider } from "../../context/NotesContext";
 
 describe("<NewNotePage />", () => {
-  Storage.prototype.setItem = jest.fn();
-
   beforeEach(() => {
     render(
       <NotesProvider>
@@ -50,6 +48,8 @@ describe("<NewNotePage />", () => {
   });
 
   test("should be save in localstorage data on press save button", () => {
+    Storage.prototype.setItem = jest.fn();
+
     fireEvent.change(screen.getByPlaceholderText("Tu contenido"), {
       target: {
         value: "## titulo",

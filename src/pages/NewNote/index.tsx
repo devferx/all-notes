@@ -28,8 +28,13 @@ export const NewNotePage = () => {
   };
 
   const handleSave = () => {
+    let [title] = text.split("\n");
+    // Remove # from the title
+    title = title.trim().replace("# ", "");
+
     saveNote({
       id: Date.now().toString(),
+      title,
       visibility: visibility,
       content: text,
     });

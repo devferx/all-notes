@@ -1,10 +1,15 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import emptyNotes from "../../assets/empty-notes.svg";
+import { NotesContext } from "../../context/NotesContext";
+import { NoteList } from "../../components/NoteList";
+
 import logo from "../../assets/logo.png";
 import styles from "./home.module.css";
 
 export const HomePage = () => {
+  const { notes } = useContext(NotesContext);
+
   return (
     <section className="home wrapper">
       <header className={styles.header}>
@@ -13,14 +18,8 @@ export const HomePage = () => {
           Add Note <span className={styles.addIcon} aria-label="add"></span>
         </Link>
       </header>
-      <div className={styles.emptyContent}>
-        <h3>All notes</h3>
-        <img
-          className={styles.emptyNotesImg}
-          src={emptyNotes}
-          alt="Empty Notes"
-        />
-      </div>
+
+      <NoteList title="All notes" notes={notes} />
     </section>
   );
 };
