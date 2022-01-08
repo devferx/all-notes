@@ -1,5 +1,5 @@
-import { useContext, useState, ChangeEvent } from "react";
-import { useNavigate } from "react-router-dom";
+import { useContext, useState, ChangeEvent, useEffect, useRef } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 import { NotesContext } from "../../context/NotesContext";
 import { MarkdownContent } from "../../components/MarkdownContent";
@@ -10,11 +10,27 @@ export const NewNotePage = () => {
   const [visibility, setVisibility] = useState<
     "private" | "public" | "unlisted"
   >("private");
-  const { saveNote } = useContext(NotesContext);
+  const { saveNote, getNote, deleteNote, updateNote } =
+    useContext(NotesContext);
   const navigate = useNavigate();
+  const { id: noteId } = useParams();
+  const noteRef = useRef(getNote(noteId));
+
+  useEffect(() => {
+    if (!noteRef.current) {
+      return;
+    }
+
+    setText(noteRef.current.content);
+    setVisibility(noteRef.current.visibility);
+  }, []);
 
   const handleDelete = () => {
     setText("");
+    if (noteRef.current) {
+      deleteNote(noteRef.current.id);
+      navigate("/");
+    }
   };
 
   const handleSelect = (ev: ChangeEvent<HTMLSelectElement>) => {
@@ -26,12 +42,21 @@ export const NewNotePage = () => {
     // Remove # from the title
     title = title.trim().replace("# ", "");
 
-    saveNote({
-      id: Date.now().toString(),
-      title,
-      visibility: visibility,
-      content: text,
-    });
+    if (noteRef.current) {
+      updateNote(noteRef.current.id, {
+        id: noteRef.current.id,
+        title,
+        visibility: visibility,
+        content: text,
+      });
+    } else {
+      saveNote({
+        id: Date.now().toString(),
+        title,
+        visibility: visibility,
+        content: text,
+      });
+    }
     navigate("/");
   };
 
