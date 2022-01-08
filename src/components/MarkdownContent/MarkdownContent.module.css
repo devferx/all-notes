@@ -1,0 +1,31 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  max-width: 100%;
+  overflow-x: auto;
+  font: var(--body1-regular-default);
+  color: var(--black);
+}
+
+.content h1 {
+  font: var(--headline2);
+}
+
+.content h2 {
+  font: var(--headline3);
+}
+.content h3 {
+  font: var(--headline4);
+}
+
+.content a {
+  color: var(--black);
+  font: var(--body1-bold-underline);
+}
+
+.content img {
+  width: 100%;
+}

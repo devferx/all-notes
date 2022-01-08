@@ -9,6 +9,7 @@ export const Navigation = () => {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/new-note" element={<NewNotePage />} />
+      <Route path="/new-note/:id" element={<NewNotePage />} />
       <Route path="/note">
         <Route path="" element={<NewNotePage />} />
         <Route path=":id" element={<NotePage />} />

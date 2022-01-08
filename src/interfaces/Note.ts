@@ -2,5 +2,5 @@ export interface Note {
   id: string;
   title: string;
   visibility: "private" | "public" | "unlisted";
-  content: String;
+  content: string;
 }

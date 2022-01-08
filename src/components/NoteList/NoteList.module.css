@@ -10,6 +10,8 @@
   max-width: 540px;
   margin: 0 auto;
   margin-top: 56px;
+  margin-bottom: 32px;
+  word-break: break-word;
 }
 
 .noteListTitle {

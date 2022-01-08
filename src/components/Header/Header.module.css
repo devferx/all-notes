@@ -5,8 +5,14 @@
   margin-top: 40px;
 }
 
-.addButton {
+.actions {
   display: flex;
+  gap: 16px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
   gap: 8px;
   padding: 8px 24px;
   color: var(--black);
@@ -18,7 +24,12 @@
   cursor: pointer;
 }
 
-.addButton .addIcon {
+.button.blackButton {
+  background: var(--black);
+  color: var(--white);
+}
+
+.button .addIcon {
   display: block;
   width: 24px;
   height: 24px;

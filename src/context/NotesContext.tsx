@@ -4,6 +4,7 @@ import { Note } from "../interfaces/Note";
 
 interface NotesContextProps {
   notes: Note[];
+  getNote: (id: string | undefined) => Note | undefined;
   saveNote: (newNote: Note) => void;
 }
 
@@ -31,8 +32,13 @@ export const NotesProvider = ({ children }: NotesProviderProps) => {
     setNotes((notes) => [...notes, newNote]);
   };
 
+  const getNote = (id: string | undefined) => {
+    if (!id) return undefined;
+    return notes.find((note) => note.id === id);
+  };
+
   return (
-    <NotesContext.Provider value={{ notes, saveNote }}>
+    <NotesContext.Provider value={{ notes, saveNote, getNote }}>
       {children}
     </NotesContext.Provider>
   );

@@ -1,10 +1,8 @@
-import { useContext, useEffect, useState, ChangeEvent } from "react";
+import { useContext, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
-import { marked } from "marked";
-import DOMPurify from "dompurify";
-import Prism from "prismjs";
 
 import { NotesContext } from "../../context/NotesContext";
+import { MarkdownContent } from "../../components/MarkdownContent";
 import styles from "./NewNote.module.css";
 
 export const NewNotePage = () => {
@@ -14,10 +12,6 @@ export const NewNotePage = () => {
   >("private");
   const { saveNote } = useContext(NotesContext);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    Prism.highlightAll();
-  }, [text]);
 
   const handleDelete = () => {
     setText("");
@@ -75,12 +69,7 @@ export const NewNotePage = () => {
           onChange={(ev) => setText(ev.target.value)}
           placeholder="Tu contenido"
         />
-        <div
-          className={styles.content}
-          dangerouslySetInnerHTML={{
-            __html: DOMPurify.sanitize(marked.parse(text)),
-          }}
-        ></div>
+        <MarkdownContent text={text} />
       </div>
     </section>
   );
