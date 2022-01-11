@@ -29,3 +29,11 @@
 .content img {
   width: 100%;
 }
+
+.content ul {
+  margin-left: 40px;
+}
+
+.content ol {
+  margin-left: 40px;
+}
